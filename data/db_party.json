@@ -1,0 +1,27 @@
+[
+    {
+        "_id": 1,
+        "short_name": "GYEP",
+        "full_name": "Gyümölcsevők Pártja"
+    },
+    {
+        "_id": 2,
+        "short_name": "HEP",
+        "full_name": "Húsevők Pártja"
+    },
+    {
+        "_id": 3,
+        "short_name": "TISZ",
+        "full_name": "Tejivók Szövetsége"
+    },
+    {
+        "_id": 4,
+        "short_name": "ZEP",
+        "full_name": "Zöldségevők Pártja"
+    },
+    {
+        "_id": 5,
+        "short_name": "-",
+        "full_name": "Független jelölt"
+    }
+]

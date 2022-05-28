@@ -1,0 +1,282 @@
+[
+    {
+        "_id": 1,
+        "constituency": "5",
+        "number_of_votes": 19,
+        "name": "Ablak Antal",
+        "party": 5
+    },
+    {
+        "_id": 2,
+        "constituency": "1",
+        "number_of_votes": 120,
+        "name": "Alma Dalma",
+        "party": 1
+    },
+    {
+        "_id": 3,
+        "constituency": "7",
+        "number_of_votes": 162,
+        "name": "Bab Zsuzsanna",
+        "party": 4
+    },
+    {
+        "_id": 4,
+        "constituency": "2",
+        "number_of_votes": 59,
+        "name": "Barack Barna",
+        "party": 1
+    },
+    {
+        "_id": 5,
+        "constituency": "6",
+        "number_of_votes": 73,
+        "name": "Birs Helga",
+        "party": 1
+    },
+    {
+        "_id": 6,
+        "constituency": "1",
+        "number_of_votes": 154,
+        "name": "Bors Botond",
+        "party": 2
+    },
+    {
+        "_id": 7,
+        "constituency": "5",
+        "number_of_votes": 188,
+        "name": "Brokkoli Gyula",
+        "party": 4
+    },
+    {
+        "_id": 8,
+        "constituency": "6",
+        "number_of_votes": 29,
+        "name": "Ceruza Zsombor",
+        "party": 5
+    },
+    {
+        "_id": 9,
+        "constituency": "4",
+        "number_of_votes": 143,
+        "name": "Fasirt Ferenc",
+        "party": 2
+    },
+    {
+        "_id": 10,
+        "constituency": "8",
+        "number_of_votes": 157,
+        "name": "Gomba Gitta",
+        "party": 3
+    },
+    {
+        "_id": 11,
+        "constituency": "3",
+        "number_of_votes": 13,
+        "name": "Halmi Helga",
+        "party": 5
+    },
+    {
+        "_id": 12,
+        "constituency": "2",
+        "number_of_votes": 66,
+        "name": "Hold Ferenc",
+        "party": 5
+    },
+    {
+        "_id": 13,
+        "constituency": "7",
+        "number_of_votes": 34,
+        "name": "Hurka Herold",
+        "party": 2
+    },
+    {
+        "_id": 14,
+        "constituency": "5",
+        "number_of_votes": 288,
+        "name": "Joghurt Jakab",
+        "party": 3
+    },
+    {
+        "_id": 15,
+        "constituency": "4",
+        "number_of_votes": 77,
+        "name": "Kajszi Kolos",
+        "party": 1
+    },
+    {
+        "_id": 16,
+        "constituency": "2",
+        "number_of_votes": 187,
+        "name": "Kapor Karola",
+        "party": 4
+    },
+    {
+        "_id": 17,
+        "constituency": "6",
+        "number_of_votes": 13,
+        "name": "Karfiol Ede",
+        "party": 4
+    },
+    {
+        "_id": 18,
+        "constituency": "6",
+        "number_of_votes": 187,
+        "name": "Kefir Ilona",
+        "party": 3
+    },
+    {
+        "_id": 19,
+        "constituency": "7",
+        "number_of_votes": 130,
+        "name": "Kupa Huba",
+        "party": 5
+    },
+    {
+        "_id": 20,
+        "constituency": "8",
+        "number_of_votes": 98,
+        "name": "Languszta Auguszta",
+        "party": 5
+    },
+    {
+        "_id": 21,
+        "constituency": "1",
+        "number_of_votes": 34,
+        "name": "Lila Lilla",
+        "party": 5
+    },
+    {
+        "_id": 22,
+        "constituency": "1",
+        "number_of_votes": 56,
+        "name": "Medve Rudolf",
+        "party": 5
+    },
+    {
+        "_id": 23,
+        "constituency": "5",
+        "number_of_votes": 67,
+        "name": "Meggy Csilla",
+        "party": 1
+    },
+    {
+        "_id": 24,
+        "constituency": "3",
+        "number_of_votes": 45,
+        "name": "Moly Piroska",
+        "party": 5
+    },
+    {
+        "_id": 25,
+        "constituency": "4",
+        "number_of_votes": 221,
+        "name": "Monitor Tibor",
+        "party": 5
+    },
+    {
+        "_id": 26,
+        "constituency": "8",
+        "number_of_votes": 288,
+        "name": "Narancs Edmond",
+        "party": 1
+    },
+    {
+        "_id": 27,
+        "constituency": "2",
+        "number_of_votes": 220,
+        "name": "Oldalas Olga",
+        "party": 2
+    },
+    {
+        "_id": 28,
+        "constituency": "3",
+        "number_of_votes": 185,
+        "name": "Pacal Kata",
+        "party": 2
+    },
+    {
+        "_id": 29,
+        "constituency": "1",
+        "number_of_votes": 199,
+        "name": "Petrezselyem Petra",
+        "party": 4
+    },
+    {
+        "_id": 30,
+        "constituency": "8",
+        "number_of_votes": 77,
+        "name": "Pokol Vidor",
+        "party": 5
+    },
+    {
+        "_id": 31,
+        "constituency": "8",
+        "number_of_votes": 67,
+        "name": "Ragu Ida",
+        "party": 2
+    },
+    {
+        "_id": 32,
+        "constituency": "3",
+        "number_of_votes": 156,
+        "name": "Retek Etelka",
+        "party": 4
+    },
+    {
+        "_id": 33,
+        "constituency": "7",
+        "number_of_votes": 129,
+        "name": "Sajt Hajnalka",
+        "party": 3
+    },
+    {
+        "_id": 34,
+        "constituency": "4",
+        "number_of_votes": 38,
+        "name": "Simon Simon",
+        "party": 5
+    },
+    {
+        "_id": 35,
+        "constituency": "3",
+        "number_of_votes": 87,
+        "name": "Tejes Attila",
+        "party": 3
+    },
+    {
+        "_id": 36,
+        "constituency": "2",
+        "number_of_votes": 65,
+        "name": "Tejfel Edit",
+        "party": 3
+    },
+    {
+        "_id": 37,
+        "constituency": "4",
+        "number_of_votes": 39,
+        "name": "Uborka Ubul",
+        "party": 4
+    },
+    {
+        "_id": 38,
+        "constituency": "6",
+        "number_of_votes": 288,
+        "name": "Vadas Marcell",
+        "party": 2
+    },
+    {
+        "_id": 39,
+        "constituency": "5",
+        "number_of_votes": 68,
+        "name": "Vagdalt Edit",
+        "party": 2
+    },
+    {
+        "_id": 40,
+        "constituency": "3",
+        "number_of_votes": 87,
+        "name": "Szilva Szilvia",
+        "party": 1
+    }
+]
