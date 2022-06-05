@@ -3,6 +3,8 @@ import { NextFunction, Request, Response, Router } from "express";
 import Controller from "../interfaces/controller.interface";
 import authMiddleware from "../middleware/auth.middleware";
 import candidateModel from "./candidate.model";
+import validationMiddleware from "../middleware/validation.middleware";
+import CreateCandidateDto from "./candidate.dto";
 
 export default class nsideController implements Controller {
     public path = "/api/candidate";
@@ -13,7 +15,7 @@ export default class nsideController implements Controller {
         this.router.get(this.path, this.getAll);
         this.router.get(`${this.path}/:id`, this.getById);
         this.router.get(`${this.path}/:offset/:limit/:order/:sort/:keyword?`, authMiddleware, this.getPaginatedCandidates);
-        this.router.post(this.path, authMiddleware, this.create);
+        this.router.post(this.path, [authMiddleware, validationMiddleware(CreateCandidateDto, false)], this.create);
         this.router.patch(`${this.path}/:id`, authMiddleware, this.modifyPATCH);
         this.router.put(`${this.path}/:id`, authMiddleware, this.modifyPUT);
         this.router.delete(`${this.path}/:id`, authMiddleware, this.delete);
