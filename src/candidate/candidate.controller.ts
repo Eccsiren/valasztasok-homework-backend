@@ -1,4 +1,5 @@
-import { Request, Response, Router } from "express";
+import HttpException from "../exceptions/HttpException";
+import { NextFunction, Request, Response, Router } from "express";
 import Controller from "../interfaces/controller.interface";
 import authMiddleware from "../middleware/auth.middleware";
 import candidateModel from "./candidate.model";
@@ -11,6 +12,7 @@ export default class nsideController implements Controller {
     constructor() {
         this.router.get(this.path, this.getAll);
         this.router.get(`${this.path}/:id`, this.getById);
+        this.router.get(`${this.path}/:offset/:limit/:order/:sort/:keyword?`, authMiddleware, this.getPaginatedCandidates);
         this.router.post(this.path, authMiddleware, this.create);
         this.router.patch(`${this.path}/:id`, authMiddleware, this.modifyPATCH);
         this.router.put(`${this.path}/:id`, authMiddleware, this.modifyPUT);
@@ -95,6 +97,38 @@ export default class nsideController implements Controller {
             }
         } catch (error) {
             res.status(400).send({ message: error.message });
+        }
+    };
+
+    private getPaginatedCandidates = async (req: Request, res: Response, next: NextFunction) => {
+        try {
+            const offset = parseInt(req.params.offset);
+            const limit = parseInt(req.params.limit);
+            const order = req.params.order;
+            const sort = parseInt(req.params.sort); // desc: -1  asc: 1
+            let candidates = [];
+            let count = 0;
+            if (req.params.keyword) {
+                const regex = new RegExp(req.params.keyword, "i"); // i for case insensitive
+                count = await this.nsideM.find({ $or: [{ utca: { $regex: regex } }, { hazszam: { $regex: regex } }] }).count();
+                candidates = await this.nsideM
+                    .find({ $or: [{ name: { $regex: regex } }, { constituency: { $regex: regex } }] })
+                    .populate("party", "-_id")
+                    .sort(`${sort == -1 ? "-" : ""}${order}`)
+                    .skip(offset)
+                    .limit(limit);
+            } else {
+                count = await this.nsideM.countDocuments();
+                candidates = await this.nsideM
+                    .find({})
+                    .populate("party", "-_id")
+                    .sort(`${sort == -1 ? "-" : ""}${order}`)
+                    .skip(offset)
+                    .limit(limit);
+            }
+            res.send({ count: count, candidates: candidates });
+        } catch (error) {
+            next(new HttpException(400, error.message));
         }
     };
 }
